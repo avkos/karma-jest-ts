@@ -1,0 +1,36 @@
+{
+  "name": "karma-jest-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:avkos/karma-jest-ts.git",
+  "author": "Oleksii Kosynskyi <oleksii.kosynskyi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "wss": "node server/index.js",
+    "build": "tsc --build",
+    "test": "jest --config=./test/jest.config.js",
+    "test:browsers": "./node_modules/.bin/karma start karma.config.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/ws": "^8.5.3",
+    "jasmine": "^4.1.0",
+    "jest": "^27.5.1",
+    "jest-extended": "^2.0.0",
+    "jest-mock": "^28.0.2",
+    "karma": "^6.3.19",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-jasmine": "^5.0.0",
+    "karma-webpack": "^5.0.0",
+    "process": "^0.11.10",
+    "ts-jest": "^27.1.4",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0"
+  },
+  "dependencies": {
+    "isomorphic-ws": "^4.0.1",
+    "ws": "^8.5.0"
+  }
+}
